@@ -56,7 +56,7 @@ img {
   width: 100%;
   height: 93vh;
   position: relative;
-  background: url(/images/SE-en-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpeg)
+  background: url(../images/SE-en-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpeg)
     no-repeat center center/cover;
   background-image: cover;
 }
