@@ -1,4 +1,4 @@
-console.log(` wElCoMe`);
+console.log(` wElCoMe!`);
 
 if (module.hot) {
   module.hot.accept();
