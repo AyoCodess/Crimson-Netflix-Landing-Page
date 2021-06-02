@@ -15,6 +15,7 @@ html {
 
 :root {
   --primary-color: #e50914;
+  --dark-color: #1414147f;
 }
 
 body {
@@ -56,7 +57,7 @@ img {
   width: 100%;
   height: 93vh;
   position: relative;
-  background: url(../images/SE-en-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpeg)
+  background: url(/images/SE-en-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpeg)
     no-repeat center center/cover;
   background-image: cover;
 }
@@ -124,6 +125,135 @@ img {
   margin-bottom: 2rem;
 }
 /* ? SHOWCASE AREA ENDS  */
+
+/* ! TABS SECTION */
+
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1.3rem;
+  border-bottom: 3px soldid #3d3d3d;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.6rem;
+}
+
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: 4px solid;
+  border-color: var(--primary-color);
+}
+
+/* ? JS section - Moving Tab section */
+
+.tab-content {
+  padding: 3rem 3rem;
+  background: #000;
+  color: white;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+#tab-2-content .tab-2-content-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tab-3-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.tab-3-content-container img {
+  width: 40%;
+}
+/* ! TABS SECTION ENDS */
+
+/** CONTAINER CLASS **/
+
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/** TEXT STYLES **/
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-lg {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-md {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-normal {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
+}
 
 /** BUTTON CLASSES **/
 
