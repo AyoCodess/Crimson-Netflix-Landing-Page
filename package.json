@@ -1,18 +1,18 @@
 {
-    "name": "Ayo",
-    "version": "1.0.0",
-    "description": "Project",
-    "default": "index.html",
-    "scripts": {
-        "start": "parcel index.html",
-        "build": "parcel build index.html --dist-dir ./dist"
-    },
-    "author": "Ayo",
-    "license": "ISC",
-    "devDependencies": {
-        "autoprefixer": "^10.2.4",
-        "bundler": "^0.8.0",
-        "parcel": "^1.12.4",
-        "sass": "^1.26.10"
-    }
+  "name": "Ayo",
+  "version": "1.0.0",
+  "description": "Project",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Ayo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "bundler": "^0.8.0",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.26.10"
+  }
 }
