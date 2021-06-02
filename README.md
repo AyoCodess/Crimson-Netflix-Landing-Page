@@ -1,4 +1,4 @@
 # Netflix-Landing-Page
 
 Neflix Landing page <br>
-Live Demo: https://netflix-landing-page-ayocodes.netlify.app
+Live Demo: https://crimson-neflix-landpage.netlify.app/
