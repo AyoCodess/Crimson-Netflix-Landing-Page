@@ -142,7 +142,6 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 
 .tabs p {
@@ -204,10 +203,9 @@ img {
   text-align: center;
 }
 
-
 .tab-3-content-container {
   display: grid;
-  
+
   grid-template-columns: 1fr 1fr;
 
   align-items: center;
@@ -215,37 +213,30 @@ img {
 }
 
 .tab-3-content-container img {
-
   width: 40%;
 }
-
 
 .ayo {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
 .ayo:after {
-  content: '';
+  content: "";
   position: absolute;
-  box-shadow: inset 0rem 0rem 10rem 3rem #000;
+  box-shadow: inset 0rem 0rem 2rem 1rem #000;
   width: 100%;
   height: 100%;
-  border-radius: 10rem;
- 
 }
 
-
-}
 /* ! TABS SECTION ENDS */
 
 /** CONTAINER CLASS **/
 
 .tab-content {
-  max-width: 70%;
+  margin: auto;
 }
 
 .container {
