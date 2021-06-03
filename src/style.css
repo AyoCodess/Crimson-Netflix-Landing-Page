@@ -210,6 +210,8 @@ img {
 
   align-items: center;
   justify-items: center;
+
+  margin-top: 3rem;
 }
 
 .tab-3-content-container img {
@@ -232,6 +234,46 @@ img {
 }
 
 /* ! TABS SECTION ENDS */
+
+/* ? FOOTER STYLES */
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: 0;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.footer p {
+  margin-bottom: 1.7rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li {
+  line-height: 2.5rem;
+}
+
+.footer li a:hover {
+  line-height: 2.5rem;
+  color: white;
+}
+
+/* ? FOOTER STYLES ENDS */
 
 /** CONTAINER CLASS **/
 
