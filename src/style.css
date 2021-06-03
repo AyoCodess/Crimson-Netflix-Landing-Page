@@ -128,6 +128,18 @@ img {
 
 /* ! TABS SECTION */
 
+/* hide content initially */
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 .tabs {
   background: var(--dark-color);
   padding-top: 1.3rem;
@@ -187,7 +199,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 4rem;
 }
 
@@ -195,10 +207,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-
-  justify-content: center;
-  align-items: center;
-
   margin-top: 2rem;
   text-align: center;
 }
@@ -207,6 +215,7 @@ img {
   display: grid;
 
   grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
 
   align-items: center;
   justify-items: center;
@@ -392,6 +401,47 @@ img {
   }
 }
 
+@media (max-width: 700px) {
+  #tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-top {
+    grid-template-columns: none;
+    grid-template-rows: 2fr 1fr;
+    text-align: center;
+
+    margin-bottom: 2rem;
+  }
+
+  #tab-2-content .tab-2-content-bottom {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+
+    gap: 1rem;
+  }
+
+  
+
+  .tab-3-content-container {
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .tab-3-content-container .text-area {
+    align-self: flex-start;
+
+}
+
+.tab-3-content-container .text-area p {
+  margin-bottom: 2rem;
+
+}
+
 @media (max-width: 655px) {
   .showcase-content h1 {
     font-size: 3rem;
@@ -419,24 +469,6 @@ img {
     padding: 0;
   }
 
-  .tab-3-content-container .text-lg {
-    font-size: 1.2rem;
-  }
-
-  .tab-3-content-container .btn-xl {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  .tab-3-content-container img {
-    min-width: 100%;
-  }
-
-  .ayo:after {
-    width: 120%;
-    height: 120%;
-  }
-
   .footer .footer-cols {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -445,13 +477,6 @@ img {
   }
 
   .showcase::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: inset 4rem 8rem 15rem #000000, inset -4rem -8rem 15rem #000000; /* ? inset shadow top left, right bottom */
   }
