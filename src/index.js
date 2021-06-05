@@ -8,7 +8,6 @@ function selectItem(e) {
   removeShow();
   //add border to current tab
   this.classList.add("tab-border");
-  console.log(`clicked`);
 
   // add show class to content item
   const tabContentItem = document.querySelector(`#${this.id}-content`);
