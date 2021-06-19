@@ -11049,7 +11049,7 @@ img {
 }
 
 .tabs {
-  background: black;
+  background: black !important;
   padding-top: 1.3rem;
   border-bottom: 3px solid #3d3d3d;
 }
