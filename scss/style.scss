@@ -482,6 +482,24 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .showcase-content h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 709px) {
+  .showcase-content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .showcase-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 500px) {
   .showcase-content h1 {
     font-size: 2.5rem;
@@ -531,3 +549,36 @@ img {
 }
 
 //? contact me box
+
+form {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 2rem;
+    color: white;
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .inputs {
+    input {
+      width: 30rem;
+      padding: 1rem;
+    }
+
+    button {
+      @media (max-width: 494px) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.btn-contact {
+  padding: 1.2rem;
+  font-size: 1.5rem;
+}

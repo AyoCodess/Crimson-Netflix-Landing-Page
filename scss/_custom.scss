@@ -72,7 +72,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   @include border-radius(0);
   overflow-anchor: none;
   @include transition($accordion-transition);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
 
   &:not(.collapsed) {
@@ -152,7 +152,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   padding: $accordion-body-padding-y $accordion-body-padding-x;
   color: white;
   background-color: black;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 // Flush accordion items
