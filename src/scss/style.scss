@@ -75,6 +75,17 @@ img {
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
   box-shadow: inset 12rem 10rem 25rem #000000, inset -12rem -10rem 25rem #000000; /* ? inset shadow top left, right bottom */
+
+  @media (max-width: 960px) {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 658px) {
+    box-shadow: inset 6rem 5rem 12.5rem #000000,
+      inset -6rem -5rem 12.5rem #000000;
+
+    background: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .showcase-top {
@@ -116,6 +127,27 @@ img {
 
   position: relative;
   z-index: 2;
+
+  @media (max-width: 494px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 414px) {
+    height: 75vh;
+  }
+
+  @media (max-width: 375px) {
+    height: 75vh;
+  }
+}
+
+.tabs {
+  @media (max-width: 414px) {
+    margin-top: 5rem;
+  }
+  @media (max-width: 375px) {
+    margin-top: 5rem;
+  }
 }
 
 .showcase-content h1 {
@@ -126,6 +158,30 @@ img {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+.contact-me-header {
+  width: 100vw;
+  margin-top: 1rem;
+
+  form {
+    p {
+      font-size: 2rem;
+
+      @media (max-width: 320px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    button {
+      box-shadow: none;
+    }
+
+    .inputs {
+      width: 100%;
+      border-radius: 0px;
+    }
+  }
 }
 /* ? SHOWCASE AREA ENDS  */
 
@@ -343,15 +399,16 @@ img {
   cursor: pointer;
   outline: none;
   box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 90%);
-  border-radius: 0.5rem;
+  white-space: nowrap;
 }
 
 .btn:hover {
   opacity: 0.8;
+  color: white;
 }
 
 .btn-rounded {
-  border-radius: 1rem;
+  // border-radius: 1rem;
 }
 
 .btn-xl {
@@ -388,7 +445,7 @@ img {
   }
 
   .showcase-content p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .tabs {
@@ -475,11 +532,6 @@ img {
     gap: 1rem;
     line-height: 1rem;
   }
-
-  .showcase::after {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 4rem 8rem 15rem #000000, inset -4rem -8rem 15rem #000000; /* ? inset shadow top left, right bottom */
-  }
 }
 
 @media (max-width: 768px) {
@@ -492,15 +544,28 @@ img {
   .showcase-content h1 {
     font-size: 5rem;
   }
+  .showcase-content p {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 540px) {
   .showcase-content h1 {
     font-size: 3.5rem;
   }
+
+  .showcase-content p {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .showcase-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
   .showcase-content h1 {
     font-size: 2.5rem;
   }
@@ -510,14 +575,18 @@ img {
   .showcase-content h1 {
     font-size: 2rem;
   }
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
 }
 
 /* ? ANIMATION */
 
-.showcase-content h1,
-.showcase-content p {
-  animation: float 4s infinite;
-  animation-timing-function: ease;
+.showcase-content {
+  .main {
+    animation: float 4s infinite;
+    animation-timing-function: ease;
+  }
 }
 
 @keyframes float {
@@ -572,6 +641,47 @@ form {
 
     button {
       @media (max-width: 494px) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.inputs-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 494px) {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  input {
+    width: 35rem;
+    height: 5.9rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+
+    @media (max-width: 494px) {
+      height: auto;
+    }
+  }
+
+  button {
+    border-radius: 0px;
+    font-size: 2.2rem;
+    @media (max-width: 494px) {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 540px) {
+      button {
         margin-top: 1rem;
       }
     }

@@ -10931,6 +10931,17 @@ img {
   box-shadow: inset 12rem 10rem 25rem #000000, inset -12rem -10rem 25rem #000000;
   /* ? inset shadow top left, right bottom */
 }
+@media (max-width: 960px) {
+  .showcase::after {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 658px) {
+  .showcase::after {
+    box-shadow: inset 6rem 5rem 12.5rem #000000, inset -6rem -5rem 12.5rem #000000;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
 
 .showcase-top {
   display: grid;
@@ -10967,6 +10978,32 @@ img {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 494px) {
+  .showcase-content {
+    height: 70vh;
+  }
+}
+@media (max-width: 414px) {
+  .showcase-content {
+    height: 75vh;
+  }
+}
+@media (max-width: 375px) {
+  .showcase-content {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 414px) {
+  .tabs {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 375px) {
+  .tabs {
+    margin-top: 5rem;
+  }
+}
 
 .showcase-content h1 {
   font-size: 6rem;
@@ -10976,6 +11013,26 @@ img {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+.contact-me-header {
+  width: 100vw;
+  margin-top: 1rem;
+}
+.contact-me-header form p {
+  font-size: 2rem;
+}
+@media (max-width: 320px) {
+  .contact-me-header form p {
+    font-size: 1.5rem;
+  }
+}
+.contact-me-header form button {
+  box-shadow: none;
+}
+.contact-me-header form .inputs {
+  width: 100%;
+  border-radius: 0px;
 }
 
 /* ? SHOWCASE AREA ENDS  */
@@ -11176,15 +11233,12 @@ img {
   cursor: pointer;
   outline: none;
   box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.9);
-  border-radius: 0.5rem;
+  white-space: nowrap;
 }
 
 .btn:hover {
   opacity: 0.8;
-}
-
-.btn-rounded {
-  border-radius: 1rem;
+  color: white;
 }
 
 .btn-xl {
@@ -11220,7 +11274,7 @@ img {
   }
 
   .showcase-content p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .tabs {
@@ -11303,12 +11357,6 @@ img {
     gap: 1rem;
     line-height: 1rem;
   }
-
-  .showcase::after {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 4rem 8rem 15rem #000000, inset -4rem -8rem 15rem #000000;
-    /* ? inset shadow top left, right bottom */
-  }
 }
 @media (max-width: 768px) {
   .showcase-content h1 {
@@ -11319,13 +11367,26 @@ img {
   .showcase-content h1 {
     font-size: 5rem;
   }
+
+  .showcase-content p {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 540px) {
   .showcase-content h1 {
     font-size: 3.5rem;
   }
+
+  .showcase-content p {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 500px) {
+  .showcase-content h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 375px) {
   .showcase-content h1 {
     font-size: 2.5rem;
   }
@@ -11334,10 +11395,13 @@ img {
   .showcase-content h1 {
     font-size: 2rem;
   }
+
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
 }
 /* ? ANIMATION */
-.showcase-content h1,
-.showcase-content p {
+.showcase-content .main {
   animation: float 4s infinite;
   animation-timing-function: ease;
 }
@@ -11388,6 +11452,47 @@ form .inputs input {
 }
 @media (max-width: 494px) {
   form .inputs button {
+    margin-top: 1rem;
+  }
+}
+
+.inputs-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 494px) {
+  .inputs-header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .inputs-header p {
+    font-size: 1.5rem;
+  }
+}
+.inputs-header input {
+  width: 35rem;
+  height: 5.9rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 494px) {
+  .inputs-header input {
+    height: auto;
+  }
+}
+.inputs-header button {
+  border-radius: 0px;
+  font-size: 2.2rem;
+}
+@media (max-width: 494px) {
+  .inputs-header button {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .inputs-header button button {
     margin-top: 1rem;
   }
 }
