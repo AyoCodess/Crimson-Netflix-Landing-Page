@@ -58,7 +58,7 @@ img {
 
 .showcase {
   width: 100%;
-  height: 93vh;
+  height: 100vh;
   position: relative;
   background: url(/images/SE-en-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpeg)
     no-repeat center center/cover;
@@ -121,32 +121,20 @@ img {
   height: 60vh;
 
   align-items: center;
-  justify-content: center;
 
   text-align: center;
 
   position: relative;
   z-index: 2;
 
-  @media (max-width: 494px) {
-    height: 70vh;
-  }
-
   @media (max-width: 414px) {
-    height: 75vh;
+    align-items: center;
+    justify-content: center;
+
+    top: 3%;
   }
 
   @media (max-width: 375px) {
-    height: 75vh;
-  }
-}
-
-.tabs {
-  @media (max-width: 414px) {
-    margin-top: 7rem;
-  }
-  @media (max-width: 375px) {
-    margin-top: 9rem;
   }
 }
 
@@ -200,9 +188,16 @@ img {
 }
 
 .tabs {
-  background: black !important;
+  background: black;
   padding-top: 1.3rem;
   border-bottom: 3px solid #3d3d3d;
+
+  @media (max-width: 360px) {
+    margin-top: 6rem;
+  }
+  @media (max-width: 375px) {
+    margin-top: 6rem;
+  }
 }
 
 .tabs .container {
@@ -568,6 +563,7 @@ img {
 @media (max-width: 375px) {
   .showcase-content h1 {
     font-size: 2.5rem;
+    margin-top: 10rem;
   }
 }
 
