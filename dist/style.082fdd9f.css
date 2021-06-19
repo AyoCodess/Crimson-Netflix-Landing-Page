@@ -10986,6 +10986,7 @@ img {
 }
 .showcase-content h1 {
   font-size: 6rem;
+  margin-top: 20rem;
 }
 
 .showcase-content p {
@@ -11260,6 +11261,7 @@ img {
 
   .showcase-content h1 {
     font-size: 6rem;
+    margin-top: 7rem;
   }
 
   .showcase-content p {
@@ -11349,12 +11351,13 @@ img {
 }
 @media (max-width: 768px) {
   .showcase-content h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 709px) {
   .showcase-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-top: 6rem;
   }
 
   .showcase-content p {
@@ -11438,7 +11441,8 @@ form p {
 }
 form .inputs input {
   width: 30rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 494px) {
   form .inputs button {
@@ -11490,6 +11494,7 @@ form .inputs input {
 .btn-contact {
   padding: 1.2rem;
   font-size: 1.5rem;
+  height: 5.7rem;
 }
 
 /*# sourceMappingURL=/style.082fdd9f.css.map */
